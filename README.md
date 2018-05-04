@@ -20,7 +20,7 @@ allprojects {
 在 **module** 的 `build.gralde` 文件中增加如下依赖。
 
 ```
-implementation 'com.github.UamaHZ:flashlightcompat:29d3b7a59e'
+implementation 'com.github.UamaHZ:flashlightcompat:0.1'
 ```
 
 ## 使用
