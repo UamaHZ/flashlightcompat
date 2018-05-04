@@ -14,11 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val flashlightSwitch = findViewById<Switch>(R.id.flashlight_switch)
         flashlightSwitch.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                FlashlightCompat.turnOn(this)
-            } else {
-                FlashlightCompat.turnOff(this)
-            }
+            FlashlightCompat.turn(this, isChecked)
         }
     }
 
