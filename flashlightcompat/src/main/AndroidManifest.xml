@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.uama.flashlightcompat">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application>
+        <activity
+            android:name=".RequestCameraPermissionActivity"
+            android:theme="@style/Theme.Transparent" />
+    </application>
+</manifest>
