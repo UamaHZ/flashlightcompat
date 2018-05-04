@@ -18,6 +18,12 @@ class CameraPermissionResultEvent(val granted: Boolean)
 
 object FlashlightCompat {
 
+    fun switch(context: Context, on: Boolean) = if (on) {
+        turnOn(context)
+    } else {
+        turnOff(context)
+    }
+
     fun turnOn(context: Context) {
         // 判断是否有相机权限
         if (ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
